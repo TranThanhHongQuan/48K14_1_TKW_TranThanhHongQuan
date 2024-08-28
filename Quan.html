@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+    <style>
+        a:visited {
+            color: red;
+        }
+
+        p::first-letter {
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a:hover {
+            font-size: 20pt;
+        }
+
+        button {
+            background-color: aqua;
+            color: black;
+            text-decoration: underline
+        }
+
+
+
+        .flexContainer {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+        }
+        .flexContainer1{
+            display: flex;
+            align-items: center;
+
+        }
+
+        .quan1 {
+            background-color: aquamarine;
+        }
+
+        .quan3 {
+            background-color: blue;
+            flex-grow: 8;
+            height: 200pt;
+
+        }
+        .quan2 {
+            background-color: orangered;
+            height: 200pt;
+        }
+
+        .quan4 {
+            background-color: yellow;
+        }
+        @media screen and (max-width:800pt) {
+            .flexContainer1 {
+                display: flex;
+                flex-direction: column;
+            }
+            .quan1 {
+                display: flex;
+                flex-direction: column;
+            }
+            .quan4 {
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
+
+        .gridCon{
+            display: grid;
+
+            /**/
+            grid-template-columns: auto auto auto;
+            background-color: aqua;
+        }
+        .gridCon div{
+
+            background-color: pink;
+
+            display: flex;
+            align-content: center;
+        }
+        .item1{grid-column: 1/4;}
+        .item2{grid-row: 2/4;height: 100px;}
+        .item3{grid-column: 2/4   ;height: 100px;}
+        .item4{grid-column: 1/4   ;}
+    </style>
+</head>
+<body>
+        <li>37.Trần Hoàng Oanh</li>
+        <li>40.Trần Thành Hồng Quân</li>
+        <li>23.Phạm Thị Thảo Huyền</li>
+</body>
+
+</html>
