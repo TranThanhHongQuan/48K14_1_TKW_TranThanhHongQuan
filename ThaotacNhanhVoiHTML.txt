@@ -1,0 +1,148 @@
+1. Sử dụng Trình soạn thảo mã với Emmet
+Emmet là một công cụ mạnh mẽ tích hợp sẵn trong nhiều trình soạn thảo mã (như VS Code, Sublime Text) giúp bạn viết HTML nhanh chóng bằng cách sử dụng các phím tắt.
+Ví dụ:
+Gõ div.container>div.row>div.col*3 và nhấn Tab sẽ tạo ra:
+html
+Sao chép mã
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</div>
+Gõ ul>li*5 và nhấn Tab sẽ tạo ra:
+html
+Sao chép mã
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+2. Sử dụng Snippets (Đoạn mã)
+Snippets là các đoạn mã HTML thường dùng mà bạn có thể lưu trữ và tái sử dụng để tiết kiệm thời gian.
+Hầu hết các trình soạn thảo hiện đại đều cho phép bạn tạo và sử dụng snippets của riêng mình hoặc tải về từ cộng đồng.
+3. Các phím tắt phổ biến trong trình soạn thảo mã
+Duplicate line: Nhân bản dòng hiện tại (Shift + Alt + Down trên VS Code).
+Comment/Uncomment: Thêm hoặc bỏ dấu comment (Ctrl + /).
+Wrap with tag: Bọc đoạn mã đã chọn với một thẻ HTML (Ctrl + Shift + P, sau đó tìm "Emmet: Wrap with Abbreviation").
+4. Sử dụng các bộ công cụ CSS và JS
+Bootstrap: Sử dụng các component sẵn có của Bootstrap để nhanh chóng tạo giao diện responsive mà không cần viết nhiều mã HTML.
+Font Awesome: Tích hợp Font Awesome để thêm các biểu tượng vào trang web chỉ với một dòng mã.
+5. Sử dụng Live Server
+Live Server là một tiện ích mở rộng của VS Code giúp bạn xem ngay lập tức các thay đổi trên trình duyệt mà không cần phải reload thủ công.
+Cài đặt Live Server trên VS Code và khởi động nó để theo dõi thay đổi trong thời gian thực.
+6. Copy và Paste các mẫu mã HTML
+Mẫu mã HTML: Có rất nhiều trang web cung cấp các mẫu mã HTML miễn phí (ví dụ: HTML5 UP, Templatemo), giúp bạn không phải tự viết từ đầu.
+Bạn có thể tải xuống các mẫu mã này và sửa đổi để phù hợp với nhu cầu của mình.
+7. Sử dụng các Frameworks và Libraries
+Tailwind CSS: Tailwind CSS là một framework CSS tiện lợi cho phép bạn áp dụng các class CSS trực tiếp vào HTML, giúp giảm thiểu thời gian viết CSS.
+jQuery: Mặc dù đã lỗi thời hơn so với các framework hiện đại, jQuery vẫn rất hữu ích để thao tác DOM và sự kiện trong HTML một cách nhanh chóng.
+8. Tạo cấu trúc HTML nhanh chóng với Boilerplate
+HTML Boilerplate: Bạn có thể sử dụng một mẫu boilerplate để nhanh chóng tạo ra cấu trúc cơ bản của một tài liệu HTML5.
+Gõ ! và nhấn Tab trong VS Code để tạo một file HTML5 cơ bản:
+html
+Sao chép mã
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+9. Sử dụng Developer Tools trong trình duyệt
+Developer Tools: Sử dụng công cụ Developer Tools trong các trình duyệt như Chrome, Firefox để kiểm tra, chỉnh sửa và thử nghiệm mã HTML ngay trên trang mà không cần quay lại trình soạn thảo.
+Những mẹo trên giúp bạn thao tác nhanh hơn với HTML, giảm thiểu thời gian phát triển và tăng hiệu quả làm việc.
+
+
+
+
+
+
+*************************************************************
+1. Thẻ cấu trúc cơ bản
+    <html>: Thẻ gốc của tài liệu HTML.
+    <head>: Chứa thông tin về tài liệu (meta, title, links).
+    <title>: Định nghĩa tiêu đề của trang web (hiển thị trên tab trình duyệt).
+    <body>: Chứa nội dung hiển thị trên trang web.
+2. Thẻ định dạng văn bản
+    <h1> đến <h6>: Định nghĩa tiêu đề (từ lớn nhất đến nhỏ nhất).
+    <p>: Định nghĩa đoạn văn bản.
+    <b> hoặc <strong>: Làm văn bản in đậm.
+    <i> hoặc <em>: Làm văn bản in nghiêng.
+    <u>: Gạch chân văn bản.
+    <br>: Xuống dòng.
+    <hr>: Đường kẻ ngang.
+    <pre>: Văn bản giữ nguyên định dạng.
+3. Thẻ liên kết
+    <a>: Tạo liên kết. Ví dụ: <a href="url">Link text</a>.
+4. Thẻ hình ảnh và đa phương tiện
+    <img>: Chèn hình ảnh. Ví dụ: <img src="image.jpg" alt="Mô tả">.
+    <audio>: Chèn âm thanh.
+    <video>: Chèn video.
+5. Thẻ danh sách
+    <ul>: Danh sách không có thứ tự (bullet points).
+    <ol>: Danh sách có thứ tự (số thứ tự).
+    <li>: Mục trong danh sách.
+6. Thẻ bảng
+    <table>: Tạo bảng.
+    <tr>: Tạo hàng trong bảng.
+    <td>: Tạo ô trong bảng.
+    <th>: Tạo ô tiêu đề trong bảng.
+    <caption>: Chú thích cho bảng.
+7. Thẻ biểu mẫu
+<form>: Tạo biểu mẫu. ---> Cấu trúc của thẻ <input>:
+            <input type="button" value="button_name" onclick="function_onclick_event()" id="id_of_input" name="name_of_input">
+            Giải thích các thuộc tính:
+            type: Xác định loại điều khiển đầu vào.
+            value: Định nghĩa giá trị ban đầu của điều khiển đầu vào.
+            onclick: Sự kiện JavaScript kích hoạt khi nhấn vào nút.
+            id: Định danh duy nhất cho thẻ input.
+            name: Tên của điều khiển đầu vào, được sử dụng khi dữ liệu biểu mẫu được gửi.
+            Các loại <input>:
+            Button: Một nút có thể nhấn được.
+            Submit: Nút lệnh để gửi biểu mẫu.
+            Reset: Nút lệnh để khởi tạo lại dữ liệu biểu mẫu.
+            Text: Hộp nhập văn bản đơn dòng.
+            Password: Hộp nhập mật khẩu, nơi ký tự sẽ được che giấu.
+            Email: Hộp nhập địa chỉ email.
+            Tel: Hộp nhập số điện thoại.
+            URL: Hộp nhập địa chỉ web.
+            Checkbox: Hộp chọn nhiều trong nhiều.
+            Radio: Hộp chọn 1 trong nhiều.
+            Date: Hộp chọn kiểu ngày tháng năm.
+            Datetime-local: Hộp chọn kiểu ngày tháng năm + giờ phút (không có múi giờ).
+            Time: Hộp chọn kiểu giờ phút.
+            File: Hộp chọn file.
+            Image: Hiển thị hình ảnh.
+            Number: Hộp nhập liệu giá trị số từ bàn phím.
+            Range: Hộp nhập liệu kiểu số bằng thanh cuộn
+    <input>: Trường nhập liệu.
+    <textarea>: Trường nhập liệu nhiều dòng.
+    <button>: Nút bấm.
+    <select>: Danh sách lựa chọn (dropdown).
+    <option>: Mục trong danh sách <select>.
+    <label>: Gán nhãn cho trường biểu mẫu.
+8. Thẻ chia khối nội dung
+    <div>: Khối chứa (container).
+    <span>: Chứa văn bản hoặc phần tử inline.
+9. Thẻ lập trình
+    <script>: Chèn mã JavaScript.
+    <style>: Chèn mã CSS.
+    <link>: Liên kết đến tài liệu CSS hoặc tài nguyên bên ngoài.
+    <meta>: Chứa thông tin meta như charset, viewport.
+10. Thẻ khác
+    <header>: Phần đầu của tài liệu hoặc một phần tử.
+    <footer>: Phần cuối của tài liệu hoặc một phần tử.
+    <nav>: Tạo menu điều hướng.
+    <section>: Chia tài liệu thành các phần.
+    <article>: Nội dung độc lập như bài viết.
+    <aside>: Nội dung bên lề hoặc phụ.
+    <figure>: Định nghĩa một khối hình ảnh hoặc đồ thị.
+    <figcaption>: Chú thích cho hình ảnh hoặc đồ thị trong <figure>.

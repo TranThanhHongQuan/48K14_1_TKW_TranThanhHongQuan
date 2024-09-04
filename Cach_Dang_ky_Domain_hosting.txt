@@ -1,0 +1,36 @@
+1. Đăng ký Domain
+Bước 1: Chọn tên miền
+Tên miền (Domain) là địa chỉ mà người dùng sẽ sử dụng để truy cập vào website của bạn, ví dụ: example.com.
+Chọn một tên miền dễ nhớ, liên quan đến nội dung hoặc thương hiệu của bạn.
+Kiểm tra tính khả dụng của tên miền trên các trang cung cấp dịch vụ domain như Namecheap, GoDaddy, hoặc Google Domains.
+Bước 2: Mua tên miền
+Khi đã chọn được tên miền khả dụng, bạn cần mua tên miền đó thông qua các nhà cung cấp dịch vụ domain.
+Đăng ký tài khoản và thanh toán theo hướng dẫn trên trang dịch vụ.
+2. Đăng ký Hosting
+Bước 1: Chọn nhà cung cấp dịch vụ hosting
+Hosting là nơi lưu trữ các file của website trên internet. Có nhiều loại hosting như Shared Hosting, VPS Hosting, và Dedicated Hosting.
+Chọn nhà cung cấp dịch vụ hosting uy tín như Bluehost, HostGator, hoặc SiteGround.
+Xác định loại hosting phù hợp với nhu cầu của bạn.
+Bước 2: Mua gói hosting
+Sau khi chọn nhà cung cấp, bạn chọn gói hosting và tiến hành đăng ký.
+Cung cấp thông tin liên quan và thanh toán.
+3. Public Website Lên Hosting
+Bước 1: Kết nối Domain với Hosting
+Thay đổi DNS: Sau khi đăng ký domain và hosting, bạn cần kết nối chúng với nhau bằng cách thay đổi bản ghi DNS (Domain Name System) của domain trỏ về địa chỉ IP của hosting.
+Đăng nhập vào tài khoản domain, tìm phần quản lý DNS.
+Thêm hoặc sửa đổi bản ghi A (hoặc CNAME) để trỏ domain về địa chỉ IP của hosting.
+Bước 2: Upload files lên hosting
+Sử dụng FTP (File Transfer Protocol):
+Cài đặt một phần mềm FTP client như FileZilla.
+Sử dụng thông tin đăng nhập FTP (cung cấp bởi nhà cung cấp hosting) để kết nối với server.
+Upload các file của website (HTML, CSS, JS, v.v.) lên thư mục public_html hoặc www.
+Sử dụng trình quản lý file trên cPanel:
+Đăng nhập vào cPanel của hosting.
+Vào phần “File Manager” và upload các file của website vào thư mục public_html hoặc www.
+Bước 3: Cài đặt cơ sở dữ liệu (nếu cần)
+Nếu website của bạn sử dụng cơ sở dữ liệu (như MySQL), bạn cần tạo cơ sở dữ liệu và nhập dữ liệu vào.
+Tạo một cơ sở dữ liệu mới trong cPanel.
+Import file database (thường là .sql) qua phpMyAdmin.
+Bước 4: Kiểm tra và hoàn thiện
+Sau khi upload và cài đặt đầy đủ, kiểm tra website bằng cách nhập tên miền vào trình duyệt.
+Nếu có vấn đề, kiểm tra lại các thiết lập DNS, file và cơ sở dữ liệu.
