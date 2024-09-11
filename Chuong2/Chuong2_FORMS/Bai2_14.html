@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+          display: flex;
+          flex-direction: column; /* Đặt các phần tử xuống hàng */
+          gap: 10px; /* Khoảng cách giữa các phần tử */
+          text-align: center;
+          align-items: center; 
+        }
+        input {
+            width:30% ;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <center>
+            <img src="https://www.mango.org/wp-content/uploads/2021/09/logo_mango.png" alt="">
+        </center>
+        <center>
+            <a href="">Home</a>
+            <a href="">Location</a>
+            <a href="">Blog</a>
+        </center>
+    </header>
+    <main>
+        <center style="color: red;"><b>Sign Up</b></center>
+        <form>
+            <label for="Firstname">First Name</label>
+            <input type="text" minlength="2" maxlength="50" name="Firstname" id="Firstname">
+    
+            <label for="Lastname">Last Name</label>
+            <input type="text" name="Lastname" id="Lastname" minlength="5" maxlength="50">
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" minlength="15" maxlength="30">
+    
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password" minlength="8" maxlength="30">
+            <label for="ConPassword">Confirm Password</label>
+            <input type="password" name="ConPassword" id="ConPassword" minlength="8" maxlength="30">
+            <input style="width: 60px; ;" type="submit" value="Sign Up">
+
+        </form>
+    </main>
+    <footer>
+        <center>Copyright By Mango.org</center>
+    </footer>
+</body>
+</html>

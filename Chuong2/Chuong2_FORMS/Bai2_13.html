@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset id="name">
+            <legend>Your name</legend>
+            <input type="text" name="name" required>
+        </fieldset>
+        <fieldset id="sex">
+            <legend>Sex</legend>
+            <input type="radio" value="Male" name="sex">Male
+            <input type="radio" value="Female" name="sex" checked>Female
+        </fieldset>
+        <fieldset id="size">
+            <legend>Size</legend>
+            <input type="radio" value="2-perontable" name="size"> 2-perontable
+            <input type="radio" value="2-perontable" name="size" checked>4-perontable
+            <input type="radio" value="2-perontable" name="size">6-perontable
+        </fieldset>
+        <fieldset id="location">
+            <legend>Location</legend>
+            <input type="radio" value="Indoors" name="location">Indoors
+            <input type="radio" value="Outdoors" checked name="location" id="">Outdoors
+        </fieldset>
+        <center><button>Book table</button></center>
+    </form>
+</body>
+</html>

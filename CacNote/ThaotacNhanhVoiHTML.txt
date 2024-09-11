@@ -146,3 +146,106 @@ Những mẹo trên giúp bạn thao tác nhanh hơn với HTML, giảm thiểu 
     <aside>: Nội dung bên lề hoặc phụ.
     <figure>: Định nghĩa một khối hình ảnh hoặc đồ thị.
     <figcaption>: Chú thích cho hình ảnh hoặc đồ thị trong <figure>.
+
+
+*************
+Các thuộc tính phổ biến của form
+
+value: Thiết lập giá trị của đối tượng
+min, max: Thiết lập giá trị nhỏ nhất và lớn nhất
+minlenght 
+maxlenght: Thiết lập chiều dài tối thiểu và tối đa của giá trị văn bản
+required: Trường yêu cầu nhập liệu
+step ::Dùng với thẻ input, thiết lập giá trị bước nhảy
+rows, cols Dùng với thẻ textarea, thiết lập số dòng, số cột tối đa
+checked: Dùng với thẻ input, thiết lập giá trị mặc định được chọn
+
+
+*******************************
+các thuộc tính của type trong input
+button: nút lệch tùy chọn
+submit: nút lệnh submit
+reset: nút lệnh khởi tạo dữ liệu
+text: Hộp nhập văn bản đơn dòng
+password: hộp nhập mật khẩu
+Email: hộp nhập đại chỉ email
+tel: hộp nhập số điện thoại
+url: hộp nhập địa chỉ web
+checkbox: hộp chọn nhiều trong nhiều
+radio: hộp chọn  trong nhiều
+date: hộp chọn kiểu ngày tháng năm
+datetime-local: hộp chọn kiểu ngày tháng năm + giờ phút
+time: hộp chọn kiểu giờ phút
+file: hộp chọn file
+image: hộp hiển thị hình ảnh
+number: hộp nhập liệu giá trị số từ bàn phím 
+range: hộp nhập liệu kiểu số bằng thanh cuộn
+*******************************
+
+
+
+
+
+1.Thiết lập màu sắc và nền:
+color: Đặt màu cho văn bản.
+color: blue;
+background-color: Đặt màu nền.
+background-color: yellow;
+2. Định dạng văn bản:
+font-size: Đặt kích thước chữ.
+font-size: 16px;
+font-family: Chọn kiểu chữ.
+font-family: Arial, sans-serif;
+font-weight: Đặt độ đậm của chữ.
+font-weight: bold;
+font-style: Đặt kiểu chữ nghiêng, bình thường, v.v.
+font-style: italic;
+text-align: Căn lề văn bản (trái, phải, giữa, v.v.).
+text-align: center;
+3. Khoảng cách:
+margin: Khoảng cách ngoài giữa các phần tử.
+margin: 10px;
+padding: Khoảng cách bên trong giữa nội dung và viền của phần tử.
+padding: 20px;
+4. Định dạng hộp (Box Model):
+border: Đặt đường viền cho phần tử.
+border: 2px solid black;
+width: Đặt chiều rộng của phần tử.
+width: 300px;
+height: Đặt chiều cao của phần tử.
+height: 200px;
+5. Vị trí và hiển thị:
+position: Định vị trí của phần tử (relative, absolute, fixed, sticky).
+position: relative;
+top: 10px;
+left: 20px;
+display: Đặt kiểu hiển thị của phần tử (block, inline, inline-block, none).
+display: block;
+visibility: Hiển thị hoặc ẩn phần tử (visible, hidden).
+visibility: hidden;
+
+6. Canh chỉnh và phân phối:
+text-align: Canh lề văn bản.
+text-align: right;
+vertical-align: Căn chỉnh theo chiều dọc.
+vertical-align: middle;
+float: Căn lề phần tử sang trái hoặc phải.
+float: left;
+7. CSS cho danh sách:
+list-style: Định dạng danh sách (kiểu gạch đầu dòng, số).
+list-style-type: square;
+8. CSS cho hình ảnh:
+border-radius: Tạo góc bo tròn cho phần tử (thường dùng cho hình ảnh).
+border-radius: 50%;
+box-shadow: Tạo hiệu ứng đổ bóng cho phần tử.
+box-shadow: 5px 5px 10px grey;
+9. Trạng thái phần tử:
+:hover: Thay đổi kiểu khi người dùng di chuột vào phần tử.
+a:hover {
+  color: red;
+}
+10. Giao diện và hoạt ảnh:
+cursor: Thay đổi con trỏ khi di chuột lên phần tử.
+cursor: pointer;
+transition: Tạo hiệu ứng chuyển đổi giữa các trạng thái CSS.
+transition: all 0.5s ease;
