@@ -160,6 +160,8 @@ step ::Dùng với thẻ input, thiết lập giá trị bước nhảy
 rows, cols Dùng với thẻ textarea, thiết lập số dòng, số cột tối đa
 checked: Dùng với thẻ input, thiết lập giá trị mặc định được chọn
 
+id dùng ở fronend 
+còn name dùng ở backend
 
 *******************************
 các thuộc tính của type trong input
@@ -180,12 +182,13 @@ file: hộp chọn file
 image: hộp hiển thị hình ảnh
 number: hộp nhập liệu giá trị số từ bàn phím 
 range: hộp nhập liệu kiểu số bằng thanh cuộn
+pattern="[0-9]{10}": ràng buộc giữ liệu khi nhập vào
+
+
+
+
+
 *******************************
-
-
-
-
-
 1.Thiết lập màu sắc và nền:
 color: Đặt màu cho văn bản.
 color: blue;

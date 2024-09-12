@@ -16,17 +16,37 @@
     </style>
 </head>
 <body>
-    <img src="https://www.mango.org/wp-content/uploads/2021/09/logo_mango.png" alt="">
-    <form>
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" required>
-        <label for="dateofbooking">Date Of Booking</label>
-        <input type="date" name="dateofbooking" id="dateofbooking">
-        <label for="cancellationPolicy">
-            <input type="checkbox" name="cancellationPolicy" id="cancellationPolicy" required>
-            I agree to the cancellation policy
-        </label>
-        <button  style="width: 30%;">Book Now</button>
-    </form>
+    <center>
+        <img src="https://www.mango.org/wp-content/uploads/2021/09/logo_mango.png" alt="">
+        <form>
+            <table>
+                <tr>
+                    <td><label for="email">Email Address</label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dateofbooking">Date Of Booking</label></td>
+                    <td><input type="date" name="dateofbooking" id="dateofbooking"></td>
+                </tr>
+                <tr>
+                    <td><label for="Nop">Number of people</label></td>
+                    <td><input type="text" name="Nop"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="cancellationPolicy">
+                            <input type="checkbox" name="cancellationPolicy" id="cancellationPolicy" required>
+                            I agree to the cancellation policy
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center><button style="width: 30%;">Book Now</button></center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </center>
 </body>
 </html>
