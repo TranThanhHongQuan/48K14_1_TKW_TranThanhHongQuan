@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%; /* Mỗi sản phẩm chiếm 30% chiều rộng */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .discount {
+            color: red;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .product-item {
+                width: 100%; /* Khi màn hình nhỏ hơn 768px, mỗi sản phẩm chiếm 100% chiều rộng */
+            }
+
+            .product-grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-grid">
+        <!-- Sản phẩm 1 -->
+        <div class="product-item">
+            <img src="ip6.jpg" alt="iPhone 6 32GB">
+            <p class="product-title">Điện Thoại iPhone 6 32GB VN/A (Vàng Đồng) - Hàng Chính Hãng</p>
+            <p class="price">6.199.000₫</p>
+            <p class="original-price">8.990.000₫</p>
+            <p class="discount">-31%</p>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="product-item">
+            <img src="images.jpg" alt="Samsung Galaxy J2 Pro 2018">
+            <p class="product-title">Điện Thoại Samsung Galaxy J2 Pro 2018 - Hàng Chính Hãng</p>
+            <p class="price">2.360.000₫</p>
+            <p class="original-price">3.290.000₫</p>
+            <p class="discount">-28%</p>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="product-item">
+            <img src="xiao.jpg" alt="Xiaomi Mi Mix 2">
+            <p class="product-title">Điện Thoại Xiaomi Mi Mix 2 (Black) - Hàng Chính Hãng</p>
+            <p class="price">7.290.000₫</p>
+            <p class="original-price">12.990.000₫</p>
+            <p class="discount">-44%</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container{
+        display: flex;
+        align-items: stretch;
+    }
+    .flex-container .flex-container1{
+        flex: 0 0 auto;
+    }
+    .flex-container .flex1{
+        flex:1;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .flex-container .acb{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .one{
+        background-color: yellow;
+    }
+    .two{
+        background-color: violet;
+    }
+    .three{
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="flex-container">
+        <div class="flex-container1">Preferred dishes </div>
+        <div class="flex1">
+            <div class="acb one " style="flex-basis: 35%;">35%</div>
+            <div class="acb two " style="flex-basis: 50%;">50%</div>
+            <div class="acb three " style="flex-basis: 15%;">15%</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ccc;
+        }
+        header .container{
+            height: 52px; 
+            background-color: rgb(255, 106, 0) ;
+            color: white;
+        }
+        
+        header .container span{
+            line-height: 52px;
+            padding:0 30px; 
+        }
+
+        .input{
+            background-color: white;
+            width: 500px;  
+            margin: 20px auto;          
+        }
+        .container_name{
+            padding: 20px ; 
+            width: 100%;
+
+        }
+        .container_pass{
+            padding: 0 20px 20px ; 
+            width: 100%;
+        }
+        .container_name, .container_pass{
+            display: flex;
+        }
+        .container_name label, .container_pass label{
+            flex-basis: 20%;
+        }
+        .container_name input, .container_pass input{
+            flex-basis: 80%;
+        }
+        .sidebar{
+            background-color: white;
+            display: flex;
+        }
+        .sidebar_sub{
+            flex-basis: 20%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .sidebar_main{ 
+            flex-basis: 60%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .sidebar_sub, .sidebar_main{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .sidebar h1{ 
+            margin-bottom: 20px;
+        }
+        .feature{
+            display: flex;
+            justify-content: space-around;
+        }
+        .feature_sub{
+            flex-basis: 33.33333%;
+            margin: 40px 20px;
+        }
+        .feature_sub.one{
+            background-color: aquamarine;
+        }
+        .feature_sub.two{
+            background-color: blanchedalmond;
+        }
+        .feature_sub.three{
+            background-color: blueviolet;
+        }
+        .feature_sub.one, .feature_sub.two, .feature_sub.three{
+            padding: 20px 10px ;
+        }
+        .number{
+            height: 100px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        .number_sub{
+            background-color: orangered;
+            padding: 10px 40px;
+            font-size: 20px;
+        }
+        .center_item{
+                text-align: center;
+        }
+        .center_item_sub{
+            background-color: aquamarine;
+            display: inline-block;
+            font-size: 30px;
+            padding: 100px;
+            margin: 40px;
+        }
+        .chart{
+            display: flex;
+            background-color: white;
+            color: white;
+        }
+        .chart_sub{
+            display: flex;
+            flex: 0 0 50%;
+            justify-content: space-between;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .color_bgr{
+            background-color: orangered;
+        }
+        .percent{
+            padding: 20px;
+            margin: 20px ;
+        }
+        .container_chart{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height : 300px
+        }
+        .one_percent{
+            flex-basis: 10%;
+        }
+        .two_percent{
+            flex-basis: 20%;
+        }
+        .four_percent{
+            flex-basis: 40%;
+        }
+        .nine_percent{
+            flex-basis: 90%;
+        }
+        .eight_percent{
+            flex-basis: 80%;
+        }
+        .sidebar_two{
+            display: flex;
+            justify-content: center;
+        }
+        .main_sidebar{
+            background-color: white;
+            width: 400px
+        }
+        .sub_sidebar{
+            display: flex;
+            flex-direction: column;
+        }
+        .main_sidebar, .sub_sidebar{
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+        .sub_sidebar_one{
+            background-color: pink;
+        }
+        .sub_sidebar_two{
+            background-color: rgb(108, 108, 234);
+        }
+        .sub_sidebar_one, .sub_sidebar_two{
+            flex-basis: 50%;
+            width: 400px;
+        }
+        .main_sidebar, .sub_sidebar_one, .sub_sidebar_two{
+            padding:20px
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <span>Giới thiệu</span>
+                <span>Kết nối</span>
+                <span>Tải ứng dụng</span>
+            </div>
+        </header>
+        <article>
+            <div class="input">
+                <div class="container">
+                    <div class = 'container_name'>
+                        <label for="name">Name</label>
+                    <input type="text" id="name">
+                    </div>
+                    <div class = 'container_pass'>
+                        <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class = "sidebar_sub">
+                    <h1>Sidebar one</h1>
+                    <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me. Since I've been interested in your company for a long time. I would like to apply today as a sample position a permanent employment.</p>
+                </div>
+
+                <div class = 'sidebar_main'>
+                    <h1>Main column</h1>
+                    <p>
+                        I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me. Since I've been interested in your company for a long time. I would like to apply today as a sample position a permanent employment. 
+                        <br /><br />
+                        At the moment i'm working as a Sample company. My most important tasks includes  familiarizing myself with new products, conducting sales talks and transferring orders.
+                        <br /><br />
+                        Your job list sounds great! i hope that this will enable me to develop personal and professional development opportuities. I like focus and image in this industry very well,
+                        so I see you as a very interesting employer. I have been folllowing your development for a long time in the media and therefore believe that I also fit in well with the company.
+                    </p>
+                </div>
+
+                <div class = "sidebar_sub">
+                    <h1>Sidebar Two</h1>
+                    <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me. Since I've been interested in your company for a long time. I would like to apply today as a sample position a permanent employment.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature_sub one">
+                    <h1>Feature 1</h1>
+                    <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me. Since I've been interested in your company for a long time. I would like to apply today as a sample position a permanent employment.</p>
+                </div>
+                <div class="feature_sub two">
+                    <h1>Feature 2</h1>
+                    <p>At the moment i'm working as a Sample company. My most important tasks includes  familiarizing myself with new products, conducting sales talks and transferring orders.</p>
+                </div>
+                <div class="feature_sub three">
+                    <h1>Feature 3</h1>
+                    <p>
+                        Your job list sounds great! i hope that this will enable me to develop personal and professional development opportuities. I like focus and image in this industry very well,
+                        so I see you as a very interesting employer. I have been folllowing your development for a long time in the media and therefore believe that I also fit in well with the company.
+                    </p>
+                </div>
+            </div>
+            <div class="number">
+                <div class="number_sub">
+                    <h1>1</h1>
+                </div>
+                <div class="number_sub">
+                    <h1>2</h1>
+                </div>
+                <div class="number_sub">
+                    <h1>3</h1>
+                </div>
+                <div class="number_sub">
+                    <h1>4</h1>
+                </div>
+                <div class="number_sub">
+                    <h1>5</h1>
+                </div>
+            </div>
+            <div class="center_item">
+                <div class="center_item_sub">
+                    <h1>Center item</h1>
+                </div>
+            </div>
+            <div class="chart">
+                <div class="chart_sub">
+                    <div class = 'container_chart'>
+                        <p class = 'one_percent color_bgr percent'>10%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'two_percent color_bgr percent'>20%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'four_percent color_bgr percent'>40%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'nine_percent color_bgr percent'>90%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'eight_percent color_bgr percent'>80%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'four_percent color_bgr percent'>40%</p>
+                    </div>
+                </div>
+                <div class="chart_sub">
+                    <div class = 'container_chart'>
+                        <p class = 'one_percent color_bgr percent'>10%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'two_percent color_bgr percent'>20%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'four_percent color_bgr percent'>40%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'nine_percent color_bgr percent'>90%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'eight_percent color_bgr percent'>80%</p>
+                    </div>
+                    <div class = 'container_chart'>
+                        <p class = 'four_percent color_bgr percent'>40%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_two">
+                <div class="main_sidebar">
+                    <p>
+                        I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me. Since I've been interested in your company for a long time. I would like to apply today as a sample position a permanent employment. 
+                        <br /><br />
+                        At the moment i'm working as a Sample company. My most important tasks includes  familiarizing myself with new products, conducting sales talks and transferring orders.
+                        <br /><br />
+                        Your job list sounds great! i hope that this will enable me to develop personal and professional development opportuities. I like focus and image in this industry very well,
+                        so I see you as a very interesting employer. I have been folllowing your development for a long time in the media and therefore believe that I also fit in well with the company.
+                    </p>
+                </div>
+                <div class="sub_sidebar">
+                    <div class="sub_sidebar_one">
+                        <p>I'm writing to you in reference to the job position advertised MyCV.vn which immediately appealed to me. Since I've been interested in your company for a long time. I would like to apply today as a sample position a permanent employment.</p>
+                    </div>
+                    <div class="sub_sidebar_two">
+                        At the moment i'm working as a Sample company. My most important tasks includes  familiarizing myself with new products, conducting sales talks and transferring orders.
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>    
+</body>
+</html>

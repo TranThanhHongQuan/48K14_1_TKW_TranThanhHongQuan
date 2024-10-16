@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bk{
+            border-radius: 7px;
+            max-width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgb(215, 215, 215);
+        }
+        .con{
+            padding: 20px 40px;
+        }
+        input{
+            display: block;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .fa{
+            margin-top: auto;
+            color: orangered;
+            font-size: 40px;
+            border-radius: 40px;
+            padding: 7px;
+            border: 1px solid;
+        }
+        h1, form {
+            font-size: 5vw;
+        }
+        .email{
+            padding: 6px;
+        }
+        .button{
+            background-color: orangered;
+            color: white;
+            width: 130px;
+            padding: 12px 6px;
+        }
+        @media screen and (max-width: 768px) {
+            input,.button{
+                width: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bk">
+        <div class="con">
+            <i class="fa fa-envelope"></i>
+            <h1>Đăng ký nhận bảng tin</h1>
+            <p>Vui lòng điền chính xác email của anh/chị vào mục sau.</p>
+        </div>
+        <form action="">
+            <input class="email" type="email" placeholder="Nhập địa chỉ email">
+            <input  class="button" type="button" value="GỬI THÔNG TIN">
+        </form>
+    </div>
+</body>
+</html>

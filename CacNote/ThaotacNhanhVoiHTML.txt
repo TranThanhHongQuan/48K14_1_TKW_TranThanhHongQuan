@@ -252,3 +252,131 @@ cursor: Thay đổi con trỏ khi di chuột lên phần tử.
 cursor: pointer;
 transition: Tạo hiệu ứng chuyển đổi giữa các trạng thái CSS.
 transition: all 0.5s ease;
+
+Inline Style Sheet (kiểu trực tiếp):
+
+Được định nghĩa trực tiếp trong thẻ HTML bằng thuộc tính style.
+Ưu tiên cao nhất, do nó áp dụng trực tiếp lên phần tử.
+Ví dụ:
+html
+Sao chép mã
+<p style="color: red;">Văn bản màu đỏ</p>
+Internal Style Sheet (kiểu nội bộ):
+
+Được định nghĩa trong phần <style> của trang HTML.
+Có mức ưu tiên thấp hơn so với inline nhưng cao hơn so với external.
+Ví dụ:
+html
+Sao chép mã
+<style>
+  p {
+    color: blue;
+  }
+</style>
+External Style Sheet (kiểu bên ngoài):
+
+Được định nghĩa trong file CSS riêng và liên kết với trang HTML qua thẻ <link>.
+Có mức ưu tiên thấp hơn internal và inline.
+Ví dụ:
+html
+Sao chép mã
+<link rel="stylesheet" href="styles.css">
+Multiple Style Sheets (nhiều file CSS):
+
+Nếu nhiều file CSS được liên kết với trang, quy tắc nào được định nghĩa sau cùng trong các file sẽ được áp dụng (tính từ trên xuống dưới). Ngoài ra, các file có thể sử dụng cơ chế ưu tiên dựa trên độ cụ thể (specificity) của các quy tắc.
+Thứ tự xảy ra trước:
+Inline Style (cao nhất)
+Internal Style
+External Style
+Multiple Style Sheets (các file CSS được đọc từ trên xuống)
+Nếu có xung đột:
+Inline > Internal > External
+Quy tắc có độ specificity cao hơn (chọn lọc phần tử cụ thể hơn) sẽ được ưu tiên.
+!important: Nếu một quy tắc có !important sẽ có ưu tiên cao nhất trong số các quy tắc cùng loại.
+
+
+********************************************************
+@media not|only mediatype and (media feature) {
+    CSS-Code;
+}
+
+Trong đó mediatype:
+– all: Dùng cho mọi thiết bị (default);
+– print: Dùng cho máy in;
+– screen: Dùng cho máy tính và các thiết bị smart phone;
+ Phối hợp với các từ khoá not (phủ định), only (chỉ có), and (và) để đưa ra điều kiện truy
+vấn thiết bị hiển thị;
+ Media Feature: là các thuộc tính ràng buộc nhằm kiểm tra trạng thái hiện tại của màn hình
+hiển thị;
+
+
+********************************************************
+Media CSS – Media Feature
+ aspect-ratio: Tỉ lệ giữa chiều rộng và chiều cao của viewport;
+ min-aspect-ratio: Tỉ lệ tối thiểu giữa chiều rộng và chiều cao của viewport;
+ max-aspect-ratio: Tỉ lệ tôi đa giữa chiều rộng và chiều cao của viewport;
+ color: Số bits cho mỗi màu sắc của device;
+ color-index: Số lượng màu sắc mà device có thể hiển thị;
+ device-aspect-ratio: Tỉ lệ giữa chiều rộng và chiều cao;
+ max-device-aspect-ratio: Tỉ lệ tối đa giữa chiều rộng và chiều cao;
+ min-device-aspect-ratio: Tỉ lệ tối thiểu giữa chiều rộng và chiều cao;
+ device-height: Chiều cao của device;
+ device-width: Chiều rộng của device;
+ height: Chiều cao của viewport;
+ width: Chiều rộng của viewport;
+ max-width: Chiều rộng tối đa của viewport;
+ min-width: Chiều rộng tối thiểu của viewport;
+ max-height: Chiều cao tối đa của viewport;
+ min-height: Chiều cao tối thiểu của viewport;
+ min-device-width: Chiều rộng tối thiểu của device;
+ max-device-width: Chiều rộng tối đa của device;
+ min-device-height: Chiều cao tối thiểu của device;
+ max-device-height: Chiều cao tối đa của device;
+ orientation: Định hướng của khung nhìn (xoay hoặc không xoay thiết bị);
+ resolution: Độ phân giải của thiết bị đầu ra (sử dụng dpi hoặc dpcm);
+
+
+********************************************************
+
+
+Flexbox (Bố cục Flex - Flexbox Layout)
+– Là một kiểu bố cục trang, có khả năng tự cân đối kích thước và thứ tự phần tử
+bên trong, tương thích với tất cả các loại thiết bị hiển thị và kích thước màn hình;
+– Thích hợp cho việc sắp xếp các phần tử con theo một hướng (ngang hoặc dọc),
+như thanh điều hướng, hộp chứa,...;
+ Các thành phần:
+– Flex container: là thành phần lớn, bao quanh các phần tử bên trong;
+– Flex item: là phần tử con của container;
+» Mỗi bố cục Flex có 1 container, và có thể có nhiều item chứa bên trong;
+main axis: là trục chính để quy định hướng mà các item sẽ hiển thị. (có thể
+nằm theo phương ngang hoặc dọc, phụ thuộc vào thuộc tính flex-direction);
+ main-start, main-end: các Flex-item hiển thị từ điểm bắt đầu gọi là main-
+start đến điểm kết thúc gọi là main-end;
+ main size: kích thước các Flex-item, tùy thuộc hướng của main axis (chiều ngang);
+cross axis: là trục vuông góc của main axis;
+ cross-start, cross-end: có ý nghĩa tương tự nhưng luôn vuông góc với main
+start, main end;
+ cross size: kích thước của các Flex-item, dựa trên trục cross axis (chiều
+cao);
+
+
+Các thuộc tính của Flex Container
+ display: Xác định hiển thị theo định dạng Flexbox
+ flex-direction: row (default)(Từ trái qua phải) | row-reverse(từ phải qua trái) | column trên xuống | column-reverse(dưới lên)
+    --> Xác định hướng của main-axis để container sắp xếp các item
+ flex-wrap
+ flex-flow
+ justify-content
+ align-items
+ align-content
+
+display: flex; /* xác định hiển thị theo định dạng flex */
+            flex-direction: row; /* xác định theo hướng sắp xếp các item theo trục ngang */
+            flex-wrap: wrap; /* cho phép các item có được xuống dòng khi cuộn trang */
+            flex-flow: row wrap; /* kết hợp của 2 cái flex-derection và wrap */
+            justify-content: center; /* canh lề cho các item */
+            align-items: flex-end; /* canh lề theo trục dọc*/
+
+
+tính toàn cục thì dùng grid
+chi tiết nhỏ trong trang thì dùng flexbox

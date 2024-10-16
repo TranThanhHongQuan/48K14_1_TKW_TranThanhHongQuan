@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/themify-icons/themify-icons.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            height: 52px;
+            background-color: black !important;
+            color: white;
+        }
+        header span{ 
+            line-height: 52px;
+            text-align: center;
+            padding: 0 40px;
+        }
+        .search{ 
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+        }
+        .search .search_input{ 
+            padding: 10px 40px;
+            border-radius: 7px;
+            border: 1px solid #ccc ;
+        }
+        .search .submit{
+            padding: 11px 20px;
+            background-color: rgb(77, 77, 187);
+            color: white;
+            border-radius: 7px;
+            border: none;
+            position: absolute;
+            right: -60px;
+        }
+        .search .ti-search{
+            position: absolute;
+            padding: 8px;
+            font-size: 24px ;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container{
+            width: 250px;
+            margin: 5px 10px;
+        }
+        .container img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <span>Home</span>
+                <span>Culinary Blog</span>
+                <span>Menu</span>
+                <span>Contact Us</span>
+            </nav>
+        </header>
+        <article>
+            <div class="search">
+                <span class = 'ti-search'></span>
+                <input type="search" placeholder="Enter text here" class ='search_input'>
+                <input type="submit" value ='Search' class = 'submit'>
+            </div>
+            <div class="main">
+                <div class="container">
+                    <img src="https://cdn.khamphadanang.vn/wp-content/uploads/2023/10/quan-an-vat-da-nang-2.jpg?strip=all&lossy=1&ssl=1" alt="">
+                </div>
+                <div class="container">
+                    <img src="https://cdn.khamphadanang.vn/wp-content/uploads/2023/10/quan-an-vat-da-nang-2.jpg?strip=all&lossy=1&ssl=1" alt="">
+                </div>
+                <div class="container">
+                    <img src="https://cdn.khamphadanang.vn/wp-content/uploads/2023/10/quan-an-vat-da-nang-2.jpg?strip=all&lossy=1&ssl=1" alt="">
+                </div>
+                <div class="container">
+                    <img src="https://cdn.khamphadanang.vn/wp-content/uploads/2023/10/quan-an-vat-da-nang-2.jpg?strip=all&lossy=1&ssl=1" alt="">
+                </div>
+                <div class="container">
+                    <img src="https://cdn.khamphadanang.vn/wp-content/uploads/2023/10/quan-an-vat-da-nang-2.jpg?strip=all&lossy=1&ssl=1" alt="">
+                </div>
+                <div class="container">
+                    <img src="https://cdn.khamphadanang.vn/wp-content/uploads/2023/10/quan-an-vat-da-nang-2.jpg?strip=all&lossy=1&ssl=1" alt="">
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

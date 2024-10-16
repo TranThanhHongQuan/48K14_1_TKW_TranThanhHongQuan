@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: rgb(0, 255, 94);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex-grow: 1;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Media queries cho màn hình từ 640px trở xuống */
+        @media (max-width: 640px) {
+            form {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            input,
+            textarea {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        /* Media queries cho màn hình từ 768px trở lên */
+        @media (min-width: 768px) {
+            form {
+                background-color: blueviolet;
+                /* Màu nền cho màn hình trung bình */
+                max-width: 80%;
+            }
+
+            .form-group {
+                flex-direction: row;
+                /* Xếp label và input theo hàng ngang */
+            }
+
+            label {
+                width: 30%;
+                /* Chiều rộng của label */
+            }
+
+            input,
+            textarea {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        /* Media queries cho màn hình từ 1024px trở lên */
+        @media (min-width: 1024px) {
+            form {
+                background-color: blue;
+                /* Màu nền cho màn hình lớn */
+                max-width: 70%;
+                padding: 20px;
+            }
+
+            input,
+            textarea {
+                font-size: 15px;
+                padding: 9px;
+            }
+
+            button {
+                font-size: 15px;
+                padding: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Họ tên</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Ngày sinh</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">SĐT</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+</body>
+
+</html>

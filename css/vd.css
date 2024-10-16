@@ -1,0 +1,12 @@
+li{
+    background-color: aqua;
+}
+ol.ol3>li{
+    background-color: aquamarine;
+}
+ol.ol1>li.li1{
+    background-color: rgb(221, 255, 127);
+}
+ol.ol2>li.li3{
+    font-size: 40px;
+}

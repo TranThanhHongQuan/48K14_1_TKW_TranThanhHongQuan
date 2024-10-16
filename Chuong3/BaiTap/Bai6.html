@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <style>
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .product-item {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 0 2px;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="ip6.jpg" alt="iPhone 6 32GB">
+            <p class="product-title">iPhone 6</p>
+            <p>32GB VN/A (Bạch Kim Đồng) - Hàng Chính Hãng</p>
+            <p class="price">6.199.000₫</p>
+            <p class="original-price">8.990.000₫</p>
+        </div>
+</body>

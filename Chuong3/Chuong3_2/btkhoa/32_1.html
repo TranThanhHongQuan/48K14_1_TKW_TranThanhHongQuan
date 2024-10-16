@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+        body{
+            background-color: blue;
+        }
+        .container{
+            border: solid white 1px;
+        }
+
+        @media screen and (max-width: 639px){
+            .input_box{
+                width: 93%;
+                display: block
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            body{
+                background-color: rgba(43, 189, 170, 0.412);
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            body{
+                background-color: rgb(146, 9, 146);
+            }
+            .box{
+                display: flex;
+                margin-top: 10px ;
+            }
+            .input_box{
+                flex-basis: 83%;
+            }
+            .label_box{ 
+                flex-basis: 10%;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <div class="container">
+                <div class="box">
+                    <label for ='hoten' class = 'label_box'>Họ Tên</label>
+                    <input type="text" id = 'hoten' class ='input_box'>
+                </div>
+                <div class="box">
+                    <label for ='ngsinh' class = 'label_box'>Ngày sinh</label>
+                    <input type="date" id = 'ngsinh' class ='input_box'>
+                </div>
+                <div class="box">
+                    <label for ='email' class = 'label_box'>Email</label>
+                    <input type="text" id = 'email' class ='input_box'>
+                </div>
+                <div class="box">
+                    <label for ='sdt' class = 'label_box'>SĐT</label>
+                    <input type="text" id = 'sdt' class ='input_box'>
+                </div>
+                <div class="box">
+                    <input type="submit" value = 'Đăng kí'>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

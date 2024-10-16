@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #header{
+            color: white;
+        }
+        #header .header{ 
+            height: 200px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        #header .header h1{
+            margin-bottom: 20px;
+        }
+        #header .nav{
+            background-color: black;
+            height: 50px;
+        }
+        #header .nav span{
+            line-height: 50px;
+            padding: 0 20px;
+        }
+        #article{
+            display: flex;
+        }
+        .aside{ 
+            flex-basis: 30%;
+            background-color: #ccc;
+            height: auto;
+        }
+        .aside .content, .article .content{
+            margin: 30px 15px;
+        }
+        .aside .img_small, 
+        .aside .img_big{
+            background-color: white;
+        }
+        .aside .img_big, .article .img_big{
+            height: 160px
+        }
+        .article .img_big{
+            background-color: #ccc;
+        }
+        .aside .img_small{
+            padding: 10px
+        }
+        .article{
+            flex-basis: 70%;
+        }
+        .footer{
+            height: 100px;
+            background-color: rgba(255, 68, 0, 0.725);
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header id = 'header'>
+            <header class = 'header'>
+                <h1>Công ty du lịch Suối Tiên</h1>
+                <p>Mang bạn đến với chốn tiên cảnh</p>
+            </header>
+            <nav class = 'nav'>
+                <span>Giới thiệu</span>
+                <span>Chương trình</span>
+                <span>Hình ảnh</span>
+                <span>Liên hệ</span>
+            </nav>
+        </header>
+        <article id = 'article'>
+            <aside class = 'aside'>
+                <div class="content">
+                    <h1 style = "margin-bottom: 20px">Giới thiệu về du lịch Đà Nẵng</h1>
+                    <h6 style = "margin-bottom: 20px">Thành phố đáng sống nhất Việt Nam</h6>
+                    <div class = "img_big" style = "margin-bottom: 20px">
+                        <p style = "padding: 10px">Image</p>
+                    </div>
+                    <p style = "margin-bottom: 20px">Đà Nẵng được xem là thành phố xinh đẹp mà bất kỳ ai cũng phải đến trong đời. Để trả lời cho những câu hỏi trải nghiệm Đà Nẵng đi đâu? Giá vé du lịch tại Đà Nẵng là bao nhiêu? Dưới đây là một số cẩm nang du lịch Đà Nẵng với các địa điểm HOT nhất.</p>
+                    <h3 style = "margin-bottom: 20px">Các hình ảnh nổi bật</h3>
+                    <div class = "img_small" style = "margin-bottom: 20px">
+                        <p>Image</p>
+                    </div>
+                    <div class = "img_small" style = "margin-bottom: 20px">
+                        <p>Image</p>
+                    </div>
+                    <div class = "img_small" style = "margin-bottom: 20px">
+                        <p>Image</p>
+                    </div>
+                    <div class = "img_small" style = "margin-bottom: 20px" >
+                        <p>Image</p>
+                    </div>
+                    <div class = "img_small" style = "margin-bottom: 20px">
+                        <p>Image</p>
+                    </div>
+                 </div>
+            </aside>
+            <article class = 'article'>
+                <div class="content">
+                    <h1 style = "margin-bottom: 20px">CÔNG VIÊN CHÂU Á</h1>
+                    <h6 style = "margin-bottom: 20px">Đà Nẵng, ngày 15/08/2023</h6>
+                    <div class = "img_big" style = "margin-bottom: 20px">
+                        <p style = "padding: 10px">Image</p>
+                    </div>
+                    <p style = "margin-bottom: 20px">
+                        Vị trí: Số 1 đường Phan Đăng Lưu, Hòa Cường Bắc, Hải Châu
+                        <br><br>
+                        Công viên Châu Á-Asia Park sở hữu hàng trăm trò chơi giải trí maoh hiểm đa dạng. Địa điểm du lịch tự túc ở Đà Nẵng nổi tiếng thu hút lượng lớn khách du lịch tham quan hằng năm. Tại đây có rất nhiều trò chơi mạo hiểm như: tàu lượn siêu tốc, tháp rơi tự do... Hoặc trò chơi dành cho các em nhỏ như đu quay, morail... Đặc biệt vòng quay mặt trời Sun Wheel là nơi chắc chắn các bạn phải đi thử, nhất là với các cặp đôi 
+                    </p>
+                    <h3 style = "margin-bottom: 20px">HẢI ĐĂNG TIÊN SA</h3>
+                    <h6 style = "margin-bottom: 20px">Đà Nẵng, ngày 15/08/2023</h6>
+                    <div class = "img_big" style = "margin-bottom: 20px">
+                        <p style = "padding: 10px">Image</p>
+                    </div>
+                    <p style = "margin-bottom: 20px">
+                        Vị trí: Thọ Quag, Sơn Trà, Đà Nẵng
+                        <br><br>
+                        Hải Đăng Tiên Sa hay còn được gọi là Hải Đăng Sơn Trà là địa điểm được Pháp xây dựng và chính thức đưa vào hoạt động năm 1902. Đây được mệnh danh là ngọn hải đăng đẹp nhất Việt Nam được xây dựng nhằm mục đích, giúp các ngư dân xác định vị trí hoạt động của mình trong phạm vi vùng biển Huế và Đà Nẵng. Khách du lịch khám phá Đà Nẵng có thể đến đây để ngắm nhìn đất trời rất tuyệt vời.
+                    </p>
+                 </div>
+            </article>
+        </article>
+        <footer>
+            <div class="footer">
+                <div class="content">
+                    <h1>Copyright@ 2023 by Tui</h1>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

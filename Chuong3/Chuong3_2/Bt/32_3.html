@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tong{
+            display: flex;
+            background-color: aqua;
+            padding: 10px;
+            gap: 10px;
+        }
+        a{
+            background-color: aqua;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        @media (max-width:768px) {
+            .tong{
+                flex-direction: column;
+            }
+        }
+        @media (min-width:768px) {
+            .tong{
+                justify-content: space-between;
+            }
+        }
+        @media (min-width:1024px) {
+            .tong{
+                justify-content: end;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tong">
+        
+        <div><a href="">Home</a></div>
+        <div><a href="">About</a></div>
+        <div><a href="">Product</a></div>
+        <div><a href="">Contact</a></div>
+    </div>
+</body>
+</html>
