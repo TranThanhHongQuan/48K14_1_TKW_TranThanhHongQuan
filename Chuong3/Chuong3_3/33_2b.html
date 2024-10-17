@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .tong {
+            display: grid;
+            background-color: orange;
+            margin: 10px;
+            padding: 5px;
+            gap: 5px;
+        }
+
+        .tong > .nhanh {
+            background-color: wheat;
+            text-align: center;
+        }
+        
+        @media (max-width:640px){
+            .tong {
+                grid-template-areas:auto;
+            }
+        }
+        @media (min-width:768px){
+            .tong {
+                grid-template-areas:'q1 q1 q2'
+                                    'q3 q4 q4'
+                                    'q5 q5 q5'
+                                    ;
+            }
+            .q1{
+                grid-area:q1;
+            }
+            .q4{
+                grid-area:q4;
+            }
+            .q5{
+                grid-area:q5;
+            }
+        }
+        @media (min-width:1024px){
+            .tong{
+                grid-template-areas:'q1 q1 q1'
+                                'q2 q3 q4'
+                                'q2 q5 q5';
+            }
+            .q1{
+                grid-area:q1;
+            }
+            .q2{
+                grid-area:q2;
+            }
+            .q5{
+                grid-area:q5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tong">
+        <div class="nhanh q1">header</div>
+        <div class="nhanh q2">menu</div>
+        <div class="nhanh q3">main</div>
+        <div class="nhanh q4">right</div>
+        <div class="nhanh q5">footer</div>
+    </div>
+</body>
+</html>

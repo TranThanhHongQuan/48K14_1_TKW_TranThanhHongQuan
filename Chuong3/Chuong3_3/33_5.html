@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tong {
+            display: grid;
+            grid-template-rows: auto auto auto;
+        }
+        .q1 {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: black;
+        }
+
+        .q2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+            padding: 10px;
+            margin: 20px 160px; /* Căn giữa khối theo chiều ngang */
+            width: 80%; /* Giới hạn chiều rộng để tránh bị tràn */
+        }
+
+        .q1>.aa {
+            color: white;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .menu a:hover {
+            color: blue;
+        }
+
+        .q3 {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .a1 {
+            grid-column: 1/3;
+            background-color: rgb(231, 227, 227);
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            display: flex;
+            align-items: center; /* Căn giữa theo chiều dọc */
+            height: 400px; /* Đảm bảo chiều cao 400px */
+            width: 900px; /* Đảm bảo chiều rộng chiếm hết khối */
+            font-size: xxx-large;
+        }
+
+        .a3 {
+            grid-column: 1/4;
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .a4 ,.a5 ,.a6{
+            background-color: white;
+            border: 2px solid rgb(198, 198, 198);
+            text-align: start;
+        }
+        .cona4,.cona5,.cona6{
+            background-color: white;
+            padding: 10px;
+            border: 1px solid rgb(198, 198, 198);
+        }
+        button{
+            background-color: rgb(60, 60, 244);
+            color: white;
+            padding: 10px;
+            border: 2px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tong">
+        <div class="nhanh q1">
+            <div class="aa">Start Bootstrap</div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#services">Services</a>
+            </div>
+
+        </div>
+        <div class="nhanh q2">
+            <div class="a1">
+                900 x 400
+            </div>
+            <div class="a2">
+                <h1>Business Name or Tagline</h1>
+                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it,
+                    but it makes a great use of the standard Bootstrap core components. Feel free to use this template
+                    for any project you want!</p>
+                <button>Call to Action!</button>
+            </div>
+            <div class="a3">This call to action card is a great place to showcase some important information or display
+                a clever tagline!</div>
+            <div class="a4">
+                <div class="cona4">
+                    <h1>Card One</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime
+                        minus quam molestias corporis quod, ea minima accusamus.
+                    </p>
+                </div>  
+                <button>More Info</button>
+            </div>
+            <div class="a5">
+                <div class="cona5">
+                    <h1>Card Two</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                </div>
+                <button>More Info</button>
+            </div>
+            <div class="a6">
+                <div class="cona6">
+                    <h1>Card Three</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                </div>
+                <button>More Info</button>
+            </div>
+        </div>
+        <div class="q3">
+            Copyright © Your Website 2023
+        </div>
+    </div>
+</body>
+
+</html>

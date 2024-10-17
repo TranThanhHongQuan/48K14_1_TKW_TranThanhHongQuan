@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        /* Default layout for larger screens (above 1024px) */
+        .tong {
+            display: grid;
+            background-color: orange;
+            margin: 10px;
+            padding: 5px;
+            grid-template-columns: auto auto auto; /* 3 cột */
+            gap: 5px;
+        }
+
+        .tong > .nhanh {
+            background-color: wheat;
+            text-align: center;
+        }
+
+        .q1 {
+            grid-column: 1 / 4; /* Header chiếm cả 3 cột */
+        }
+
+        .q2 {
+            grid-row: 2 / 4; /* Menu chiếm 2 hàng */
+        }
+
+        .q5 {
+            grid-column: 2 / 4; /* Footer chiếm cột 2 đến cột 4 */
+        }
+
+        /* Responsive for screens 1024px */
+        @media (max-width: 1024px) {
+            .tong {
+                grid-template-columns: auto auto; /* Chuyển sang 2 cột */
+            }
+
+            .q1 {
+                grid-column: 1 / 3; /* Header chiếm cả 2 cột */
+            }
+
+            .q2 {
+                grid-row: auto; /* Menu chỉ chiếm một hàng */
+                grid-column: 1 / 2; /* Menu ở cột 1 */
+            }
+
+            .q3, .q4 {
+                grid-column: 2 / 3; /* Main và Right ở cột 2 */
+            }
+
+            .q5 {
+                grid-column: 1 / 3; /* Footer chiếm 2 cột */
+            }
+        }
+
+        /* Responsive for screens 768px */
+        @media (max-width: 768px) {
+            .tong {
+                grid-template-columns: auto; /* Chuyển sang 1 cột */
+            }
+
+            .q1, .q2, .q3, .q4, .q5 {
+                grid-column: 1 / 2; /* Mỗi phần tử chiếm cả cột */
+            }
+        }
+
+        /* Responsive for screens 640px */
+        @media (max-width: 640px) {
+            .tong {
+                grid-template-columns: auto; /* Chuyển sang 1 cột */
+                gap: 10px; /* Tăng khoảng cách giữa các phần tử */
+            }
+
+            .q1, .q2, .q3, .q4, .q5 {
+                grid-column: 1 / 2; /* Mỗi phần tử chiếm cả cột */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tong">
+        <div class="nhanh q1">header</div>
+        <div class="nhanh q2">menu</div>
+        <div class="nhanh q3">main</div>
+        <div class="nhanh q4">right</div>
+        <div class="nhanh q5">footer</div>
+    </div>
+</body>
+</html>
