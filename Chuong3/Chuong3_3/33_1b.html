@@ -3,90 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
+    <title>Document</title>
     <style>
-        /* Default layout for larger screens (above 1024px) */
-        .tong {
+        .grid-container {
             display: grid;
-            background-color: orange;
-            margin: 10px;
-            padding: 5px;
-            grid-template-columns: auto auto auto; /* 3 cột */
-            gap: 5px;
-        }
-
-        .tong > .nhanh {
-            background-color: wheat;
             text-align: center;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto ;
+            gap: 5px 5px; 
+            background-color: orange;
+            border: orange solid 5px;
+            /*grid-template-areas:  'Header Header Header'
+                                    'Menu   Main   Right'
+                                    'Menu   Footer Footer';*/
         }
-
-        .q1 {
-            grid-column: 1 / 4; /* Header chiếm cả 3 cột */
+        .grid-header {
+            grid-column: 1/4;
+            background-color: rgb(249, 220, 165);
         }
-
-        .q2 {
-            grid-row: 2 / 4; /* Menu chiếm 2 hàng */
+        .grid-menu {
+            grid-row: 2/4;
+            background-color: rgb(249, 220, 165);
         }
-
-        .q5 {
-            grid-column: 2 / 4; /* Footer chiếm cột 2 đến cột 4 */
+        .grid-main {
+            grid-column: 2/3;
+            background-color: rgb(249, 220, 165);
         }
-
-        /* Responsive for screens 1024px */
-        @media (max-width: 1024px) {
-            .tong {
-                grid-template-columns: auto auto; /* Chuyển sang 2 cột */
-            }
-
-            .q1 {
-                grid-column: 1 / 3; /* Header chiếm cả 2 cột */
-            }
-
-            .q2 {
-                grid-row: auto; /* Menu chỉ chiếm một hàng */
-                grid-column: 1 / 2; /* Menu ở cột 1 */
-            }
-
-            .q3, .q4 {
-                grid-column: 2 / 3; /* Main và Right ở cột 2 */
-            }
-
-            .q5 {
-                grid-column: 1 / 3; /* Footer chiếm 2 cột */
-            }
+        .grid-right {
+            grid-column: 3/4;
+            background-color: rgb(249, 220, 165);
         }
-
-        /* Responsive for screens 768px */
+        .grid-footer {
+            grid-column: 2/4;
+            background-color: rgb(249, 220, 165);
+        }
+        @media (max-width: 1024px)
+        {
+            .grid-container {grid-template-columns: auto auto;}
+            .grid-header {grid-column: 1/4;}
+            .grid-menu {grid-row: 2/4;}
+            .grid-main {grid-column: 2/3;}
+            .grid-right {grid-column: 3/4;}
+            .grid-footer {grid-column: 2/4;}
+        }
         @media (max-width: 768px) {
-            .tong {
-                grid-template-columns: auto; /* Chuyển sang 1 cột */
-            }
-
-            .q1, .q2, .q3, .q4, .q5 {
-                grid-column: 1 / 2; /* Mỗi phần tử chiếm cả cột */
-            }
+            .grid-container {grid-template-columns: auto;}
+            .grid-header, .grid-menu, .grid-footer {grid-column: 1/3;}
+            .grid-main {grid-column: 1/2;}
+            .grid-right {grid-column:2/3}
         }
-
-        /* Responsive for screens 640px */
         @media (max-width: 640px) {
-            .tong {
-                grid-template-columns: auto; /* Chuyển sang 1 cột */
-                gap: 10px; /* Tăng khoảng cách giữa các phần tử */
-            }
+            .grid-container {
+                grid-template-columns: auto;
+                gap: 10px;}
 
-            .q1, .q2, .q3, .q4, .q5 {
-                grid-column: 1 / 2; /* Mỗi phần tử chiếm cả cột */
-            }
+            .grid-header, .grid-menu, .grid-main, .grid-right, .grid-footer {
+                grid-column: 1/2;}
         }
     </style>
 </head>
 <body>
-    <div class="tong">
-        <div class="nhanh q1">header</div>
-        <div class="nhanh q2">menu</div>
-        <div class="nhanh q3">main</div>
-        <div class="nhanh q4">right</div>
-        <div class="nhanh q5">footer</div>
+    <div class="grid-container">
+        <div class="grid-header">Header</div>
+        <div class="grid-menu">Menu</div>
+        <div class="grid-main">Main</div>
+        <div class="grid-right">Right</div>
+        <div class="grid-footer">Footer</div>
     </div>
 </body>
 </html>
